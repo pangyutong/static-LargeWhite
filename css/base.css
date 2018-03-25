@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#595959;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+}
+.zhengti {
+    margin-top: 300px;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+/*开始*/
+#baymax {
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+}
+/*头部分*/
+#head {
+    height: 64px;
+    width: 100px;
+    /*百分比定义圆角形状*/
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto -20px;
+    border-bottom: 5px solid #e0e0e0;
+    z-index: 100;
+    position: relative;
+}
+#eye, #eye2 {
+    width: 11px;
+    height: 13px;
+    background: #282828;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 27px;
+    /*旋转元素*/
+    transform: rotate(8deg);
+}
+#eye2 {
+    /*旋转对称*/
+    transform: rotate(-8deg);
+    left: 69px;
+    top: 17px;
+}
+#mouth {
+    width: 38px;
+    height: 1.5px;
+    background: #282828;
+    position: relative;
+    left: 34px;
+    top: 10px;
+}
+/*躯干部分*/
+#torso, #belly {
+    margin: 0 auto;
+    height: 200px;
+    width: 180px;background: #fff;
+    border-radius: 47%;
+    border: 5px solid #e0e0e0;
+    border-top: none;
+    z-index: 1;
+}
+#belly {
+    height: 300px;
+    width: 245px;
+    margin-top: -140px;
+    z-index: 5;
+}
+#cover {
+    width: 190px;
+    background: #fff;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 50%;
+}
+/*心脏*/
+#heart {
+    width: 2px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    /*添加阴影效果*/
+    box-shadow: 2px 5px 2px #ccc inset;
+    right: -115px;
+    top: 40px;
+    z-index: 111;
+    border: 1px solid #ccc;
+}
+/*手臂*/
+#left-arm,
+#right-arm {
+    height: 270px;
+    width: 120px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -350px;
+    left: -100px;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+#right-arm {
+    transform: rotate(-20deg);
+    left: 100px;
+    top: -620px;
+}
+/*手指*/
+#l-bigfinger,
+#r-bigfinger {
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    transform: rotate(-50deg);
+}
+#r-bigfinger {
+    left: 50px;
+    transform: rotate(50deg);
+}
+#l-smallfinger,
+#r-smallfinger {
+    height: 35px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 195px;
+    left: 66px;
+    transform: rotate(-40deg);
+}
+#r-smallfinger {
+    background: #fff;
+    transform: rotate(40deg);
+    top: 195px;
+    left: 37px;
+}
+/*腿部*/
+#left-leg,
+#right-leg {
+    height: 170px;
+    width: 90px;
+    border-radius: 40% 30% 10px 45%;
+    background: #fff;
+    position: relative;
+    top: -640px;
+    left: -45px;
+    transform: rotate(-1deg);
+    z-index: -2;
+    margin: 0 auto;
+}
+#right-leg {
+    background: #fff;
+    border-radius: 30% 40% 45% 10px;
+    margin: 0 auto;
+    top: -810px;
+    left: 50px;
+    transform: rotate(1deg);
+}
